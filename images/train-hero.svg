@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+  <!-- Background glow -->
+  <circle cx="650" cy="100" r="80" fill="rgba(107,143,168,0.10)"/>
+  <circle cx="150" cy="400" r="60" fill="rgba(107,143,168,0.06)"/>
+
+  <!-- Rails -->
+  <rect x="60" y="400" width="680" height="5" rx="2.5" fill="rgba(107,143,168,0.35)"/>
+  <rect x="60" y="425" width="680" height="5" rx="2.5" fill="rgba(107,143,168,0.35)"/>
+
+  <!-- Sleepers -->
+  <rect x="110" y="395" width="36" height="40" rx="3" fill="rgba(107,143,168,0.10)"/>
+  <rect x="230" y="395" width="36" height="40" rx="3" fill="rgba(107,143,168,0.10)"/>
+  <rect x="350" y="395" width="36" height="40" rx="3" fill="rgba(107,143,168,0.10)"/>
+  <rect x="470" y="395" width="36" height="40" rx="3" fill="rgba(107,143,168,0.10)"/>
+  <rect x="590" y="395" width="36" height="40" rx="3" fill="rgba(107,143,168,0.10)"/>
+  <rect x="710" y="395" width="36" height="40" rx="3" fill="rgba(107,143,168,0.10)"/>
+
+  <!-- Train body -->
+  <path d="M130 360 L640 360 Q660 360 660 340 L660 220 Q660 200 640 200 L170 200 Q150 200 150 220 L150 340 Q150 360 130 360 Z" fill="rgba(107,143,168,0.06)" stroke="#6b8fa8" stroke-width="2.5"/>
+
+  <!-- Cabin front accent -->
+  <path d="M150 220 L150 340 Q150 360 170 360 L210 360 L210 200 L170 200 Q150 200 150 220 Z" fill="rgba(107,143,168,0.12)" stroke="#6b8fa8" stroke-width="2"/>
+
+  <!-- Windows -->
+  <rect x="240" y="235" width="90" height="55" rx="5" fill="rgba(163,196,216,0.15)" stroke="#6b8fa8" stroke-width="1.5"/>
+  <rect x="360" y="235" width="90" height="55" rx="5" fill="rgba(163,196,216,0.15)" stroke="#6b8fa8" stroke-width="1.5"/>
+  <rect x="480" y="235" width="90" height="55" rx="5" fill="rgba(163,196,216,0.15)" stroke="#6b8fa8" stroke-width="1.5"/>
+
+  <!-- Door -->
+  <rect x="600" y="230" width="44" height="95" rx="4" fill="none" stroke="#6b8fa8" stroke-width="1.5"/>
+  <line x1="622" y1="230" x2="622" y2="325" stroke="#6b8fa8" stroke-width="1.2"/>
+
+  <!-- Side stripe -->
+  <rect x="150" y="310" width="510" height="3" rx="1.5" fill="#6b8fa8" opacity="0.45"/>
+
+  <!-- Pantograph -->
+  <path d="M390 200 L390 165 L365 140 M390 165 L415 140 M375 152 L405 152" stroke="#6b8fa8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="355" y1="200" x2="425" y2="200" stroke="#6b8fa8" stroke-width="2.5"/>
+
+  <!-- Headlight -->
+  <circle cx="165" cy="260" r="5" fill="#a3c4d8" opacity="0.8"/>
+
+  <!-- Wheels -->
+  <circle cx="230" cy="380" r="30" fill="rgba(107,143,168,0.08)" stroke="#6b8fa8" stroke-width="2"/>
+  <circle cx="230" cy="380" r="13" fill="#6b8fa8" opacity="0.25"/>
+  <circle cx="430" cy="380" r="30" fill="rgba(107,143,168,0.08)" stroke="#6b8fa8" stroke-width="2"/>
+  <circle cx="430" cy="380" r="13" fill="#6b8fa8" opacity="0.25"/>
+  <circle cx="550" cy="380" r="30" fill="rgba(107,143,168,0.08)" stroke="#6b8fa8" stroke-width="2"/>
+  <circle cx="550" cy="380" r="13" fill="#6b8fa8" opacity="0.25"/>
+
+  <!-- Decorative dots -->
+  <circle cx="620" cy="265" r="4" fill="#a3c4d8" opacity="0.6"/>
+</svg>
