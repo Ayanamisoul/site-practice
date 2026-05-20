@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О проекте — 3D Configurator</title>
+  <meta name="description" content="Цели, задачи, актуальность и архитектура проекта 3D-конфигуратора подвижного состава.">
+  <meta property="og:title" content="О проекте — 3D Configurator">
+  <meta property="og:description" content="Цели, задачи, актуальность и архитектура проекта 3D-конфигуратора подвижного состава.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти к содержимому</a>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">3D</span>
+        <span>Configurator</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="team.html">Участники</a></li>
+          <li><a href="journal.html">Журнал</a></li>
+          <li><a href="resources.html">Ресурсы</a></li>
+          <li><a href="https://configurator-web.onrender.com" target="_blank" rel="noopener noreferrer">Смотреть проект</a></li>
+        </ul>
+      </nav>
+      <a href="https://github.com/Moohomor/configurator-web" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="GitHub проекта">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.04c-3.21.7-3.88-1.55-3.88-1.55-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.82 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.6.24 2.78.12 3.07.74.81 1.19 1.84 1.19 3.1 0 4.44-2.7 5.42-5.27 5.7.42.36.79 1.07.79 2.15v3.19c0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <a href="index.html">Главная</a>
+    <a href="about.html">О проекте</a>
+    <a href="team.html">Участники</a>
+    <a href="journal.html">Журнал</a>
+    <a href="resources.html">Ресурсы</a>
+    <a href="https://configurator-web.onrender.com" target="_blank" rel="noopener noreferrer">Смотреть проект</a>
+  </div>
+
+  <main id="main-content">
+    <section class="about-hero">
+      <div class="container about-hero-grid">
+        <div class="reveal">
+          <h1>Индустриальный 3D-конфигуратор для ТМХ</h1>
+          <p class="lead">
+            3D Configurator — это результат командной работы по дисциплине «Проектная деятельность» 
+            под руководством куратора <strong>Рычкова Сергея Петровича</strong>. 
+            Проект выполняется в рамках индустриального трека для нужд <strong>Трансмашхолдинга (ТМХ)</strong>. 
+            Срок реализации: 1 учебный год (февраль—май 2026).
+          </p>
+        </div>
+        <div class="about-hero-visual reveal" style="transition-delay: 120ms;">
+          <div class="bezel bezel-lg">
+            <div class="bezel-core">
+              <img src="images/scrin-9.png" alt="3D-viewer конфигуратора с моделью вагона ЭД4М">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Цели проекта</h2>
+          <p class="text-muted" style="margin-bottom: 24px;">Цели зафиксированы в уставе проекта и утверждены куратором 9 февраля 2026 г.</p>
+        </div>
+        <div class="goals-grid reveal stagger-children">
+          <div class="goal-item reveal">
+            <div class="num">1</div>
+            <h4>Создать веб-конфигуратор подвижного состава ТМХ</h4>
+            <p>Интерактивный 3D-вьювер на базе WebSoft (Vue 3 + Three.js) для просмотра и конфигурирования моделей вагонов, локомотивов и деталей.</p>
+          </div>
+          <div class="goal-item reveal">
+            <div class="num">2</div>
+            <h4>Реализовать управление деталями и анимациями</h4>
+            <p>Возможность скрывать/показывать детали, проигрывать анимации сборки/разборки, менять текстурные пакеты в реальном времени.</p>
+          </div>
+          <div class="goal-item reveal">
+            <div class="num">3</div>
+            <h4>Сформировать каталог с метаданными</h4>
+            <p>Структурированная база моделей с описаниями, техническими характеристиками и превью для сотрудников ТМХ.</p>
+          </div>
+          <div class="goal-item reveal">
+            <div class="num">4</div>
+            <h4>Подготовить панель администратора</h4>
+            <p>Интерфейс для добавления новых 3D-моделей и редактирования метаданных без изменения кода приложения.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Актуальность</h2>
+          <p class="section-subtitle">Почему этот проект важен сегодня</p>
+        </div>
+        <div class="bento-grid grid-lines reveal stagger-children">
+          <div class="card reveal col-span-4">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <h3>Заказчик: Трансмашхолдинг (ТМХ)</h3>
+            <p>Проект выполняется для крупнейшего российского производителя подвижного состава. Заказчику необходим инструмент для визуализации конфигурации поездов при обучении сотрудников и презентации продукции заказчикам.</p>
+          </div>
+          <div class="card reveal col-span-4">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
+            <h3>Web-технологии в индустрии</h3>
+            <p>Браузерные 3D-решения на WebGL/Three.js заменяют тяжёлые десктопные приложения. Они не требуют установки, работают на любых устройствах и легко интегрируются в корпоративные порталы ТМХ.</p>
+          </div>
+          <div class="card reveal col-span-4">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <h3>Сроки и контрольные точки</h3>
+            <p>Проект разбит на 9 контрольных точек (февраль—май 2026): анализ, концепция, 3D-модель редуктора, базовый функционал, метаданные, контент, документация, тестирование, интеграция в ТМХ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Архитектура решения</h2>
+          <p class="section-subtitle">Монорепозиторий из двух пакетов</p>
+        </div>
+        <div class="arch-diagram reveal">
+          <div class="arch-row">
+            <div class="arch-box">Vue 3 + Composition API</div>
+            <div class="arch-box">Three.js + GLTFLoader</div>
+            <div class="arch-box">TypeScript (strict)</div>
+          </div>
+          <div class="arch-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg></div>
+          <div class="arch-row">
+            <div class="arch-box" style="grid-column: 1 / -1;">configurator-main — UMD-библиотека @univer/configurator</div>
+          </div>
+          <div class="arch-arrow">↓ монтируется через iframe</div>
+          <div class="arch-row">
+            <div class="arch-box" style="grid-column: 1 / -1;">example-main — демо-приложение (Vite + каталог моделей)</div>
+          </div>
+        </div>
+
+        <div class="reveal mt-lg">
+          <h3 class="section-heading">Скриншоты проекта</h3>
+        </div>
+        <div class="gallery stagger-children">
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-9.png" alt="3D-viewer с вагоном ЭД4М, панелью текстур и деталей">
+                <figcaption>3D-viewer с вагоном ЭД4М, текстур-паками и деталями</figcaption>
+              </div>
+            </div>
+          </figure>
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-8.png" alt="Каталог электропоездов и дизель-поездов">
+                <figcaption>Каталог электропоездов и дизель-поездов</figcaption>
+              </div>
+            </div>
+          </figure>
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-10.png" alt="Анимация сборки редуктора Ч-100 с плеером">
+                <figcaption>Анимация сборки редуктора Ч-100 с плеером</figcaption>
+              </div>
+            </div>
+          </figure>
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-7.png" alt="Каталог вагонов метро с превью">
+                <figcaption>Каталог вагонов метро: ключевые проекты и экспорт</figcaption>
+              </div>
+            </div>
+          </figure>
+        </div>
+
+        <div class="reveal mt-lg">
+          <h3 class="section-heading">Технологический стек</h3>
+        </div>
+        <div class="bento-grid grid-lines reveal stagger-children">
+          <div class="card reveal col-span-3">
+            <h3>Frontend</h3>
+            <p>Vue 3 (Composition API, SFC), TypeScript 5.9, Vite 7.2, CSS с scoped-стилями в компонентах.</p>
+          </div>
+          <div class="card reveal col-span-3">
+            <h3>3D-графика</h3>
+            <p>Three.js 0.170, GLTFLoader, OrbitControls, Raycaster, AnimationMixer, PBR-текстуры.</p>
+          </div>
+          <div class="card reveal col-span-3">
+            <h3>Тестирование</h3>
+            <p>Jest 29 + ts-jest (ESM), покрытие через lcov, интеграция с Codecov в GitHub Actions.</p>
+          </div>
+          <div class="card reveal col-span-3">
+            <h3>CI/CD</h3>
+            <p>GitHub Actions: установка, тесты, проверка типов, сборка библиотеки и example, артефакты.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Демонстрация работы</h2>
+          <p class="section-subtitle">Видеообзор возможностей конфигуратора и принципов работы с GLTF-моделями</p>
+        </div>
+        <div class="video-wrapper reveal">
+          <div class="bezel bezel-lg">
+            <div class="bezel-core">
+              <video controls poster="images/scrin-6.png">
+                <source src="images/demo.mp4" type="video/mp4">
+                Ваш браузер не поддерживает воспроизведение видео.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© 2026 Команда проекта. Проектная деятельность. Университетский проект. Московский Политех.</p>
+        <p class="site-credits">Разработчики сайта: Каргин М.А., Жарникова М.А.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

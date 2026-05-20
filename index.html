@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Конфигуратор подвижного состава — Главная</title>
+  <meta name="description" content="Интерактивный 3D-конфигуратор поездов и вагонов на Vue 3 и Three.js. Проектная деятельность 2026.">
+  <meta property="og:title" content="3D Configurator — 3D Конфигуратор подвижного состава">
+  <meta property="og:description" content="Интерактивный 3D-конфигуратор поездов и вагонов на Vue 3 и Three.js.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти к содержимому</a>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">3D</span>
+        <span>Configurator</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="team.html">Участники</a></li>
+          <li><a href="journal.html">Журнал</a></li>
+          <li><a href="resources.html">Ресурсы</a></li>
+          <li><a href="https://configurator-web.onrender.com" target="_blank" rel="noopener noreferrer">Смотреть проект</a></li>
+        </ul>
+      </nav>
+      <a href="https://github.com/Moohomor/configurator-web" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="GitHub проекта">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.04c-3.21.7-3.88-1.55-3.88-1.55-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.82 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.6.24 2.78.12 3.07.74.81 1.19 1.84 1.19 3.1 0 4.44-2.7 5.42-5.27 5.7.42.36.79 1.07.79 2.15v3.19c0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <a href="index.html">Главная</a>
+    <a href="about.html">О проекте</a>
+    <a href="team.html">Участники</a>
+    <a href="journal.html">Журнал</a>
+    <a href="resources.html">Ресурсы</a>
+    <a href="https://configurator-web.onrender.com" target="_blank" rel="noopener noreferrer">Смотреть проект</a>
+  </div>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <h1>3D Конфигуратор подвижного состава</h1>
+          <p class="lead">
+            Индустриальный проект для <strong>Трансмашхолдинга (ТМХ)</strong> под руководством куратора 
+            <strong>Рычкова С.П.</strong> — интерактивная веб-платформа для просмотра, конфигурирования 
+            и анализа 3D-моделей железнодорожной техники. Каталог моделей подвижного состава: 
+            локомотивы, вагоны метро, электро- и дизель-поезда, пассажирские вагоны и детали.
+          </p>
+          <div class="hero-actions">
+            <a href="about.html" class="btn btn-primary">
+              <span>Узнать больше</span>
+            </a>
+            <a href="journal.html" class="btn btn-secondary">
+              <span>Журнал проекта</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" style="transition-delay: 120ms;">
+          <div class="bezel bezel-lg">
+            <div class="bezel-core">
+              <img src="images/loco-ep20.jpg" alt="Электровоз ЭП20 — мультисистемный скоростной пассажирский локомотив">
+            </div>
+          </div>
+          <div class="hero-badge">Vue 3 + Three.js + TypeScript</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Ключевые возможности</h2>
+          <p class="section-subtitle">Что умеет наш конфигуратор и почему он уникален</p>
+        </div>
+        <div class="bento-grid grid-lines reveal stagger-children">
+          <div class="card reveal col-span-8">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+                <h3>Смена текстур в реальном времени</h3>
+                <p>Поддержка текстур-паков (PBR) с переключением прямо в браузере. Металлические, roughness и normal-мапы загружаются автоматически.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal col-span-4">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+                <h3>Управление деталями</h3>
+                <p>Интерактивный raycaster позволяет выбирать детали, скрывать/показывать их, получать всплывающие подсказки.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal col-span-4">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                <h3>Каталог моделей подвижного состава</h3>
+                <p>Локомотивы, пассажирские вагоны, вагоны метро, электропоезда, дизель-поезда и детали.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal col-span-8">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></div>
+                <h3>Проигрывание анимаций</h3>
+                <p>Встроенный плеер анимаций GLTF: play/pause, seek, регулировка скорости и циклическое воспроизведение. Удобно для демонстрации работы механизмов.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal col-span-6">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                <h3>Встраивание через iframe</h3>
+                <p>Библиотека собирается как UMD и монтируется в изолированный iframe. Стили не конфликтуют с хост-страницей — идеально для интеграции.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal col-span-6">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+                <h3>Динамическое освещение</h3>
+                <p>Ambient + Directional light с мягкими тенями (2048×2048). Интерактивное управление позицией через 2D-пад, слайдер высоты и пресеты. Визуальный хелпер — солнце с лучами.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Галерея проекта</h2>
+          <p class="section-subtitle">Скриншоты 3D-моделей из каталога</p>
+        </div>
+        <div class="gallery reveal stagger-children">
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-6.png" alt="Каталог локомотивов: грузовые, пассажирские и маневровые">
+                <figcaption>Интерфейс конфигуратора с каталогом</figcaption>
+              </div>
+            </div>
+          </figure>
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-9.png" alt="3D-viewer с вагоном ЭД4М, панелью текстур и деталей">
+                <figcaption>3D-viewer с загруженной моделью</figcaption>
+              </div>
+            </div>
+          </figure>
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-8.png" alt="Каталог электропоездов и дизель-поездов">
+                <figcaption>Каталог электропоездов и дизель-поездов</figcaption>
+              </div>
+            </div>
+          </figure>
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-10.png" alt="Анимация сборки редуктора Ч-100 с плеером">
+                <figcaption>Анимация сборки редуктора Ч-100 с плеером</figcaption>
+              </div>
+            </div>
+          </figure>
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/scrin-7.png" alt="Каталог вагонов метро с превью">
+                <figcaption>Каталог вагонов метро: ключевые проекты и экспорт</figcaption>
+              </div>
+            </div>
+          </figure>
+          <figure class="reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <img src="images/reductor.png" alt="3D-модель червячного редуктора Ч-100">
+                <figcaption>Червячный редуктор Ч-100 (3D-модель)</figcaption>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© 2026 Команда проекта. Проектная деятельность. Университетский проект. Московский Политех.</p>
+        <p class="site-credits">Разработчики сайта: Каргин М.А., Жарникова М.А.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

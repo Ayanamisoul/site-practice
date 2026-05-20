@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Журнал — 3D Configurator</title>
+  <meta name="description" content="Журнал прогресса проекта 3D-конфигуратора: новости, заметки и отчёты о выполненных этапах.">
+  <meta property="og:title" content="Журнал — 3D Configurator">
+  <meta property="og:description" content="Журнал прогресса проекта 3D-конфигуратора: новости, заметки и отчёты о выполненных этапах.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти к содержимому</a>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">3D</span>
+        <span>Configurator</span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="team.html">Участники</a></li>
+          <li><a href="journal.html">Журнал</a></li>
+          <li><a href="resources.html">Ресурсы</a></li>
+          <li><a href="https://configurator-web.onrender.com" target="_blank" rel="noopener noreferrer">Смотреть проект</a></li>
+        </ul>
+      </nav>
+      <a href="https://github.com/Moohomor/configurator-web" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="GitHub проекта">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.04c-3.21.7-3.88-1.55-3.88-1.55-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.82 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.6.24 2.78.12 3.07.74.81 1.19 1.84 1.19 3.1 0 4.44-2.7 5.42-5.27 5.7.42.36.79 1.07.79 2.15v3.19c0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <a href="index.html">Главная</a>
+    <a href="about.html">О проекте</a>
+    <a href="team.html">Участники</a>
+    <a href="journal.html">Журнал</a>
+    <a href="resources.html">Ресурсы</a>
+    <a href="https://configurator-web.onrender.com" target="_blank" rel="noopener noreferrer">Смотреть проект</a>
+  </div>
+
+  <main id="main-content">
+    <section class="about-hero">
+      <div class="container">
+        <div class="reveal">
+          <h1>Журнал проекта</h1>
+          <p class="lead">
+            Хроника разработки по контрольным точкам и дорожной карте: от формирования команды до подготовки к интеграции в ТМХ.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="timeline reveal stagger-children">
+          <article class="entry reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="entry-date">02—09 февраля 2026</div>
+                <h3>Старт проекта: цели, задачи и распределение ролей</h3>
+                <p>
+                  Первая контрольная точка — «Анализ». Команда сформировала устав проекта, 
+                  определила цель: <em>«Создание веб-конфигуратора с интерактивной 3D-визуализацией подвижного состава для повышения эффективности обучения сотрудников ТМХ»</em>. 
+                  Проведён анализ существующих решений: выявлена нехватка интерактивных инструментов для визуализации конфигурации поездов. 
+                  <strong>Каргин М.А.</strong> утвердил дорожную карту, <strong>Погорелов В.В.</strong> распределил роли в команде из 7 человек.
+                </p>
+                <div class="entry-tags">
+                  <span class="tag">#КТ1-Анализ</span>
+                  <span class="tag">#КТ2-План</span>
+                  <span class="tag">#старт</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="entry-date">09—23 февраля 2026</div>
+                <h3>Утверждение концепции и проработка UX</h3>
+                <p>
+                  Вторая контрольная точка — «Утверждение концепции и плана работ». 
+                  <strong>Жарникова М.А.</strong> разработала пользовательские сценарии и прототипы интерфейса. 
+                  Определены ключевые функции: просмотр 3D-моделей, переключение текстур, скрытие деталей, плеер анимаций. 
+                  Выбран технологический стек: Vue 3 + Three.js + TypeScript. 
+                  Зафиксированы сроки пилотной версии — 16 марта 2026.
+                </p>
+                <div class="entry-tags">
+                  <span class="tag">#концепция</span>
+                  <span class="tag">#UX</span>
+                  <span class="tag">#vue3</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="entry-date">23 февраля — 02 марта 2026</div>
+                <h3>Готовность 3D-модели редуктора с анимацией</h3>
+                <p>
+                  Третья контрольная точка выполнена. <strong>Каргин М.А.</strong> подготовил в Blender 
+                  3D-модель червячного редуктора Ч-100 с анимацией сборки и разборки. 
+                  Модель экспортирована в GLB, протестирована в тестовом viewer на Three.js. 
+                  Анимация включает 4 этапа: демонтаж крышки, извлечение червяка, снятие колеса, обратная сборка. 
+                  Длительность цикла — 12 секунд, 60 fps на целевых устройствах.
+                </p>
+                <img src="images/scrin-10.png" alt="Анимация сборки редуктора Ч-100 с плеером">
+                <div class="entry-tags">
+                  <span class="tag">#КТ3-Редуктор</span>
+                  <span class="tag">#3D-модель</span>
+                  <span class="tag">#blender</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="entry-date">02—16 марта 2026</div>
+                <h3>Базовый функционал просмотра: плеер и управление деталями</h3>
+                <p>
+                  Четвёртая контрольная точка — «Реализация базового функционала просмотра». 
+                  <strong>Котляр И.М.</strong> реализовал плеер анимаций с play/pause, шкалой seek и регулировкой скорости (0.25×–2×). 
+                  <strong>Кузьмина А.В.</strong> разработала систему скрытия/показа деталей через интерактивный raycaster. 
+                  Пользователь может кликать на части модели — они подсвечиваются, а в боковой панели появляется переключатель видимости. 
+                  Интерфейс адаптирован под мобильные устройства (≤768px).
+                </p>
+                <img src="images/scrin-9.png" alt="3D-viewer с вагоном ЭД4М, панелью текстур и деталей">
+                <div class="entry-tags">
+                  <span class="tag">#КТ4-Просмотр</span>
+                  <span class="tag">#плеер</span>
+                  <span class="tag">#raycaster</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="entry-date">23 марта — 13 апреля 2026</div>
+                <h3>Метаданные и расширение каталога</h3>
+                <p>
+                  Пятая контрольная точка — «Подготовка моделей с метаданными». 
+                  <strong>Петров К.А.</strong> сформировал структуру данных для каталога: ID, название, категория, подкатегория, 
+                  год выпуска, максимальная скорость, мощность, описание, путь к 3D-модели и превью. 
+                  Добавлены записи по классификации: локомотивы (грузовые, пассажирские, маневровые), 
+                  вагоны метро, электропоезда, дизель-поезда, пассажирские вагоны и детали.
+                </p>
+                <div class="entry-tags">
+                  <span class="tag">#КТ5-Метаданные</span>
+                  <span class="tag">#каталог</span>
+                  <span class="tag">#данные</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="entry-date">13 апреля — 15 мая 2026</div>
+                <h3>Новый контент, панель администратора и оптимизация</h3>
+                <p>
+                  Шестая—восьмая контрольные точки. <strong>Нажесткин С.А.</strong> добавил новые 3D-модели 
+                  (вагон ЭД4М с текстур-паками синий/красный, тележка МЦД, автосцепка СА-3). 
+                  <strong>Погорелов В.В.</strong> разработал панель администратора для загрузки моделей и редактирования метаданных. 
+                  <strong>Жарникова М.А.</strong> провела оптимизацию UX: ускорила загрузку текстур (lazy loading), 
+                  добавила тултипы, улучшила навигацию с клавиатуры. Проведено промежуточное тестирование — 
+                  выявлено и исправлено 14 багов, включая проблемы с CORS при загрузке текстур в iframe.
+                </p>
+                <img src="images/scrin-7.png" alt="Каталог вагонов метро с превью">
+                <div class="entry-tags">
+                  <span class="tag">#КТ6-Контент</span>
+                  <span class="tag">#КТ7-Документация</span>
+                  <span class="tag">#КТ8-Тестирование</span>
+                  <span class="tag">#оптимизация</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="entry reveal">
+            <div class="bezel">
+              <div class="bezel-core">
+                <div class="entry-date">18 мая 2026</div>
+                <h3>Финальный этап: интеграция в ТМХ</h3>
+                <p>
+                  Девятая контрольная точка — «Интеграция в ТМХ, оптимизация UX, панель администратора». 
+                  Проект готов к передаче заказчику. Библиотека собрана в UMD-формат, демо-приложение развёрнуто на тестовом стенде. 
+                  Подготовлена техническая документация: описание API, руководство по развёртыванию, инструкция для администраторов. 
+                  Команда готовится к защите проекта и планирует доработку по обратной связи от ТМХ.
+                </p>
+                <div class="entry-tags">
+                  <span class="tag">#КТ9-Интеграция</span>
+                  <span class="tag">#релиз</span>
+                  <span class="tag">#защита</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© 2026 Команда проекта. Проектная деятельность. Университетский проект. Московский Политех.</p>
+        <p class="site-credits">Разработчики сайта: Каргин М.А., Жарникова М.А.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
